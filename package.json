@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -r dotenv/config ./src/app.ts",
-    "db": "nodemon -r dotenv/config ./src/database/create.ts"
+    "db": "nodemon -r dotenv/config ./src/database/create.ts",
+    "build":"npx tsc",
+    "start":"node -r dotenv/config ./dist/app.js"
   },
   "keywords": [],
   "author": "",
